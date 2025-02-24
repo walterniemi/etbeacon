@@ -1,41 +1,29 @@
-# 🛰️ The E.T. Beacon: A Gravitational-Wave Technosignature – Jupyter Code & Data
+🛰️ The E.T. Beacon: A Gravitational-Wave Technosignature – Jupyter Code & Data
+This repository provides the full Jupyter Notebook-based analysis pipeline for:
 
-This repository provides the **full Jupyter Notebook-based analysis pipeline** for:
+"The E.T. Beacon: A Gravitational-Wave Technosignature"
+Submitted to Nature Astronomy (Manuscript ID: NATASTRON-25020154)
 
-> **"The E.T. Beacon: A Gravitational-Wave Technosignature"**  
-> *Submitted to Nature Astronomy (Manuscript ID: NATASTRON-25020154)*  
+Why This Repository is Designed This Way
+This repository is structured to allow gravitational wave scientists—even those with minimal programming experience—to easily replicate the findings using the exact methodology I used.
 
-## 🚀 **How to Run This in Jupyter**
+Why Jupyter Notebooks?
 
-### **Step 1: Clone the Repository**
-Open a terminal (or use Jupyter's built-in terminal) and run the pipeline:
+The entire analysis was conducted in Jupyter Notebook, making it the most accurate way to reproduce results.
+Running a single command launches the entire pipeline in an interactive environment.
+No deep programming knowledge is required—just copy, paste, and run in Jupyter.
 
-Step 2: Set Up Your Environment
-Make sure you have Jupyter Notebook and the required dependencies installed.
-If you haven't installed Jupyter yet, run:
+🚀 Quick Start: Run the Analysis in Jupyter
 
-Then, install the necessary Python libraries:
+To download, set up, and run the analysis, copy and paste the following into a terminal:
 
-Step 3: Launch Jupyter Notebook
-Start Jupyter Notebook in the repo directory:
-
-Step 4: Run the Notebooks in Order
-🔹 Primary Analysis Notebooks:
-notebooks/1-load_data.ipynb – Load LIGO HDF5 strain data
-notebooks/2-bandpass_filter.ipynb – Apply frequency filtering (1285-1295 Hz)
-notebooks/3-fft_analysis.ipynb – Compute FFT & identify structured peaks
-notebooks/4-wavelet_analysis.ipynb – Perform Morlet wavelet transform
-notebooks/5-prime_lattice_analysis.ipynb – Identify prime-structured frequency gaps
-notebooks/6-compare_across_LIGO_runs.ipynb – Multi-run consistency check
-notebooks/7-visualize_pi_wraparound.ipynb – The π/2 & 3π/2 wavelet phase evolution
-
-```sh
+# 1️⃣ Clone the repository
 git clone https://github.com/yourusername/ET-Beacon-Code.git
 cd ET-Beacon-Code
 
-pip install jupyterlab
+# 2️⃣ Install Jupyter and required libraries
+pip install jupyterlab numpy scipy matplotlib h5py sympy
 
-pip install numpy scipy matplotlib h5py sympy
 
+# 3️⃣ Launch Jupyter Notebook
 jupyter notebook
-
