@@ -18,8 +18,8 @@ No deep programming knowledge is required—just copy, paste, and run in Jupyter
 To download, set up, and run the analysis, copy and paste the following into a terminal:
 
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/ET-Beacon-Code.git
-cd ET-Beacon-Code
+git clone https://github.com/walterniemi/etbeacon.git
+cd etbeacon
 
 # 2️⃣ Install Jupyter and required libraries
 pip install jupyterlab numpy scipy matplotlib h5py sympy
